@@ -1,0 +1,32 @@
+package module1;
+import javax.swing.*;
+import java.awt.*;
+
+public class Window {
+	private JFrame f;
+	private JPanem p;
+	private JButton b1;
+	private JLabel label;
+	
+	public Window() {
+		gui();
+	}
+	
+	public void gui() {
+		f = new JFrame("Currency Converter");
+		f.setVisible(true);
+		f.setSize(600,400);
+		f.setDefaultCloseOperation(JFRAME.EXIT_ON_CLOSE);
+		
+		p = new JPanel();
+		p.setBackground(Color.YELLOW);
+		
+		b1 = new JButton("Hello");
+		label = new JLabel("This is a label test");
+		
+		p.add(b1);
+		p.add(label);
+		
+		f.add(p);
+	}
+}

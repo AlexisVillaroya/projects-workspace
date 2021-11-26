@@ -1,0 +1,24 @@
+package module1;
+
+public class Currency {
+	private int value;
+	private String name;
+	
+	public Currency(int value, String name) {
+		this.value = value;
+		this.name = name;
+	}
+	
+	public void ConvertCurrency(Currency c) {
+		if(!this.equals(c)) {
+			System.out.println("Same currency");
+		}else {
+			
+		}
+	}
+
+	@Override
+	public String toString() {
+		return "Currency [value=" + value + ", name=" + name + "]";
+	}
+}

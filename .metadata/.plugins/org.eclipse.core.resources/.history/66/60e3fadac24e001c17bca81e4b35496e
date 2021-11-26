@@ -1,0 +1,11 @@
+package module1;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Currency c1 = new Currency(10, "fr");
+		System.out.println(c1.toString());
+		Window w = new Window();
+	}
+
+}

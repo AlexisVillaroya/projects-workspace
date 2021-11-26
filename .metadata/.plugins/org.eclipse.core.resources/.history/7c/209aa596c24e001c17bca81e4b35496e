@@ -1,0 +1,21 @@
+package module1;
+import java.swing.*;
+import java.awt.*;
+
+public class Window {
+	private JFRAME f;
+	private JPANEL p;
+	private JBUTTON b1;
+	private JLABEL label;
+	
+	public Window() {
+		gui();
+	}
+	
+	public void gui() {
+		f = new JFRAME("Currency Converter");
+		f.setVisible(true);
+		f.setSize(600,400);
+		f.setDefaultCloseOperation(JFRAME.EXIT_ON_CLOSE);
+	}
+}

@@ -1,0 +1,29 @@
+package module1;
+import javax.swing.*;
+import java.awt.*;
+
+public class Window extends JFrame{
+	private JFrame f;
+	private JPanel p;
+	private JButton b1;
+	private JTextField textField;
+	
+	public Window() {
+		gui();
+	}
+	
+	public void gui() {
+		f = new JFrame("Currency Converter");
+		f.setVisible(true);
+		f.setSize(600,400);
+		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		textField = new JTextField(20);
+		
+		p = new JPanel();
+		p.setBackground(Color.WHITE);
+		
+		f.add(p);
+		p.add(textField);
+	}
+}
